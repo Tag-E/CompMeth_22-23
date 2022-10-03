@@ -1,0 +1,46 @@
+#include <iostream>
+
+using namespace std;
+
+void computeMean(const double* data, int nData, double& mean, double& stdDev){
+  // Two variables passed by reference to void function: not great, but harmles
+  double mean2 = 0.;
+  mean=0.;
+  stdDev = 0.
+  norm = 1.0/nData; //should check if nData != 0
+  for(int=0;i<nData;++i){
+    mean += *data;
+    stdDev = (*data) * (*data);
+    data++;
+  }
+  mean *= norm; //divide by number of points
+  stdDev *= norm;
+}
+
+double meanWithStdDev(const double* data, int nData, double& stdDev){
+  // Error passed by reference to mean function! Ugly and anti-intuitive
+}
+
+double mean(const double* data, int nData){
+  // One method to compute only average
+  double mean=0.;
+  norm = 1.0/nData; //should check if nData != 0
+  for(int=0;i<nData;++i){
+    mean += *data;
+    data++;
+  }
+  mean *= norm; //divide by number of points
+  return mean;
+}
+
+double stdDev(const double* data, int nData){
+  // One method to compute standard deviation
+  // Use mean() to compute average needed by std deviation
+}
+
+int main(){
+
+  double pressure[] = { 1.2, 0.9, 1.34, 1.67, 0.87, 1.04, 0.76 };
+  
+  return 0;
+}
