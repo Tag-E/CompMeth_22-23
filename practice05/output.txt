@@ -1,0 +1,4 @@
+Writing this to a file.
+name: prova1		value: 2.122e-314	pos err: 0	neg err: 4.57944e-41
+name: prova2		value: 2.122e-314	pos err: 0	neg err: 4.57944e-41
+name: prova3		value: 2.122e-314	pos err: 0	neg err: 4.57944e-41
