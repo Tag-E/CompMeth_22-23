@@ -33,9 +33,16 @@ class Vector3D {
     Vector3D operator+( const Vector3D& vec2 ) const ; //sum of Vector3D
     Vector3D operator-( const Vector3D& vec2 ) const ; //difference of Vector3D
     Vector3D operator*( const double& scalar ) const;  //multiplication by scalar
+    Vector3D operator/( const double& scalar ) const;  //division by scalar
+    const Vector3D& operator+=(const Vector3D& sourceVec); //increment of Vector3D
+    const Vector3D& operator-=(const Vector3D& sourceVec); //decrement of Vector3D
+    const Vector3D& operator=(const Vector3D& sourceVec); //assignation of Vector3D
 
     //utility functions
     void print() const; //flash info to screen
+
+    //friend methods
+    friend Vector3D operator*(const double& scalar, const Vector3D& vec);//multiplication scalar times a Vector3D
 
     private:
     double x_; //coordinates of a point in space
@@ -43,7 +50,7 @@ class Vector3D {
     double z_;
 
     //constructor by cartesian coordinate
-    Vector3D(double x, double y, double z); 
+    Vector3D(double x, double y, double z);// construct the Vector3D given x,y,z
 };
 
 //extra functions
@@ -54,6 +61,6 @@ double toDeg(double rad); //radians to degrees conversion
 
 //global Overloads
 
-Vector3D operator*(const double& scalar, const Vector3D& vec);
+Vector3D operator*(const double& scalar, const Vector3D& vec);//multiplication scalar times a Vector3D
 
 #endif

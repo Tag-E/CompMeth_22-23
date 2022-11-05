@@ -2,13 +2,12 @@
 #include <iostream>
 #include <cmath>
 
-#define PI atan(1)*4  //py
 
 using namespace std;
 
 int main(){
 
-    double pi = PI;
+    double pi = M_PI;  //I rename pi of cmath library
 
     Vector3D myVec;
     Vector3D myVec2 = Vector3D::cartesianVec3D(0.0,4.0,3.0);
@@ -53,6 +52,29 @@ int main(){
 
     Vector3D vecProd3 = myVec4.vectorProduct(myVec5);
     vecProd3.print();
+
+    //Vector3D vecAng = Vector3D::cartesianVec3D(0.0,0.0,1.0);
+    Vector3D vecAng = Vector3D::sphericalVec3D(8.0,pi,pi);
+    vecAng.print();
+    cout << "Test magnitude,theta,phi\n" 
+         << "mag: " << vecAng.magnitude() << "\n"
+         << "the: " << toDeg(vecAng.theta()) << "\n"
+         << "phi: " << toDeg(vecAng.phi()) << endl;
+
+    Vector3D vecToSum  = Vector3D::cartesianVec3D(1.,1.,1.);
+    Vector3D vecToEqual;
+
+    vecToSum.print();
+    vecToEqual.print();
+    vecToEqual = myVec6;
+    vecToEqual.print();
+    vecToEqual += vecToSum;
+    vecToEqual.print();
+
+    cout << "Division check" << endl;
+    
+    Vector3D vecDiv = vecToEqual/0.0;
+    vecDiv.print();
 
     return 0;
 }
