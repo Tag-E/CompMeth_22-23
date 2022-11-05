@@ -45,9 +45,27 @@ double Vector3D::scalarProduct(const Vector3D& vector2) const{
     return x_ * vector2.x() + y_ * vector2.y() + z_ * vector2.z();
 }
 
+//vector product between two vectors
+Vector3D Vector3D::vectorProduct(const Vector3D& vec2) const{
+    double x = y_ * vec2.z() - z_ * vec2.y();
+    double y = z_ * vec2.x() - x_ * vec2.z();
+    double z = x_ * vec2.y() - y_ * vec2.x();
+    return Vector3D::cartesianVec3D(x, y, z);
+}
+
 //magnitude of a vector
 double Vector3D::magnitude() const{
     return sqrt( x_*x_ + y_*y_ + z_*z_);
+} 
+
+//theta of a vector
+double Vector3D::theta() const{
+    return acos( z_ / sqrt( x_*x_ + y_*y_ + z_*z_) );
+} 
+
+//phi of a vector
+double Vector3D::phi() const{
+    return acos( z_ / sqrt( x_*x_ + y_*y_ + z_*z_) );
 } 
 
 

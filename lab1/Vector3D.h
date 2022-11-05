@@ -23,9 +23,11 @@ class Vector3D {
 
     //functions
     double scalarProduct(const Vector3D& vector2) const; //scalar product between two vectors
-    Vector3D vectorProduct(const Vector3D& vector2) const;
+    Vector3D vectorProduct(const Vector3D& vec2) const; //vector product between two vectors
 
     double magnitude() const; //magnitude of a vector
+    double theta() const; //theta of the vector
+    double phi() const; //phi of the vector
 
     //overloads
     Vector3D operator+( const Vector3D& vec2 ) const ; //sum of Vector3D

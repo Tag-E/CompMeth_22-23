@@ -51,5 +51,8 @@ int main(){
     Vector3D vecProd2 = 7 * myVec4 ;
     vecProd2.print();
 
+    Vector3D vecProd3 = myVec4.vectorProduct(myVec5);
+    vecProd3.print();
+
     return 0;
 }
