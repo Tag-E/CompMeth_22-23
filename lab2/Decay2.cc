@@ -54,7 +54,7 @@ vector<TLorentzVector> Decay2::random_p4_pair(){
 vector<TLorentzVector> Decay2::random_p4_pairBOOSTED(){
     vector<TLorentzVector> p4_pair = Decay2::random_p4_pair(); //pair of non boosted 4 momenta
 
-    vector<TLorentzVector> p4_pairBOOSTED; //pair of momenta boosted
+    //vector<TLorentzVector> p4_pairBOOSTED; //pair of momenta boosted
 
     TVector3 BoostVec = mother_.p4().BoostVector(); // I boost according to the decay particle
     p4_pair.at(0).Boost(BoostVec);
