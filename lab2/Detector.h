@@ -9,10 +9,12 @@
 
 class Detector{
     public:
-    //COSTRUCTORS
+
+    //CONSTRUCTORS
 
     //constructor by arguments
     Detector(double resolution);
+
 
     //GETTERS
 
@@ -31,7 +33,7 @@ class Detector{
     TVector3 smearing(const TVector3& sourceVec);
 
     //return a smeared 4vector
-    TLorentzVector smearing(const TLorentzVector& sourceVec);
+    //TLorentzVector smearing(const TLorentzVector& sourceVec);
 
     private:
     double resolution_; //resolution of the detector

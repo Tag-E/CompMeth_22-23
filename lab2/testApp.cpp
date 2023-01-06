@@ -1,3 +1,9 @@
+//testApp.cpp
+/*File used to check the correct behavior of the
+  classes and functions implemented*/
+
+//compile with g++ -o testApp testApp.cpp Particle.cc Decay2.cc Detector.cc `$ROOTSYS/bin/root-config --libs --cflags` -Wall
+
 #include <iostream>
 #include <cmath>
 

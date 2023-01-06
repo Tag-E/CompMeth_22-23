@@ -30,8 +30,8 @@ class Vector3D {
     double phi() const; //phi of the vector
 
     //overloads
-    Vector3D operator+( const Vector3D& vec2 ) const ; //sum of Vector3D
-    Vector3D operator-( const Vector3D& vec2 ) const ; //difference of Vector3D
+    Vector3D operator+( const Vector3D& vec2 ) const;  //sum of Vector3D
+    Vector3D operator-( const Vector3D& vec2 ) const;  //difference of Vector3D
     Vector3D operator*( const double& scalar ) const;  //multiplication by scalar
     Vector3D operator/( const double& scalar ) const;  //division by scalar
     const Vector3D& operator+=(const Vector3D& sourceVec); //increment of Vector3D

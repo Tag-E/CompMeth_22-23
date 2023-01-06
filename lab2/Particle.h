@@ -35,18 +35,20 @@ class Particle{
     //return 4-momentum of the particle            
     TLorentzVector p4() const {return p4_; }   
 
-    //Setters
+    //SETTERS
 
     //set name of the particle
     void setname(const string& name) {name_ = name;} 
     //set value of m
-    void setm(double m) {m_ = m;}
-    //set value of p4                        
-    //void setp4(TLorentzVector p4) {p4_ = p4;}            
-    /*Setter for 4-momentum no implemented, it cannot be arbitrary
-      since the mass is a class member*/
+    void setm(double m);
     //set 3-momentum of the particle
-    void setp3(double px, double py, double pz);          
+    void setp3(double px, double py, double pz);
+
+    /*m and p3 setters correctly recompute the energy of the particle
+      after setting the variable to the given value
+      A p4 setter is not implemented since the component of the 
+      4-momentum cannot be arbitrary once the mass of the 
+      particle is fixed*/       
 
 
     //OVERLOADS

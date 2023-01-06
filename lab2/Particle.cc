@@ -50,9 +50,15 @@ Particle::Particle(const Particle& sourcePart){
 
 //SETTERS
 
+//set value of m
+void Particle::setm(double m){
+    m_ = m; //set the mass
+    p4_.SetE(sqrt(p4_.Vect().Mag2() + m*m)); //compute again the energy component
+}
+
 //set 3-momentum of the particle
 void Particle::setp3(double px, double py, double pz){
-    p4_.SetPxPyPzE(px,py,pz,sqrt(px*px+py*py+pz*pz+m_*m_));
+    p4_.SetPxPyPzE(px,py,pz,sqrt(px*px+py*py+pz*pz+m_*m_)); //recompute E while settinng p3
 }
 
 
@@ -75,5 +81,6 @@ const Particle& Particle::operator=(const Particle& sourcePart){
          << "\nMass = " << m_
          << "\nPx = " << p4_.Px()
          << "\nPy = " << p4_.Py()
-         << "\nPz = " << p4_.Pz() << endl;
+         << "\nPz = " << p4_.Pz() 
+         << "\nE  = "<< p4_.E() << endl;
  }
