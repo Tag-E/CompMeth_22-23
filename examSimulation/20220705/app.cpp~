@@ -1,0 +1,21 @@
+//#include "Dataset.h"
+
+//#include <iostream>
+//#include <fstream>
+//#include <string>
+
+using namespace std;
+
+int main(){
+
+    
+    //const char filename[30] = "data1.dat"; //input file for data1
+
+    //std::cout << filename << endl;
+
+    //ifstream infile(filename);
+
+    //Dataset d1 = Dataset(7,infile);
+
+    return 0;
+}
