@@ -59,8 +59,9 @@ class Ensemble{
 
     //SETTERS
     
-    //set the value of the mass of the Ensemble
-    //void set_N(int N) {N_=N;}
+    //..no setter implemented
+
+    
 
     //UTILITY METHODS:
 

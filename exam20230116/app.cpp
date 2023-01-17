@@ -31,7 +31,7 @@ int main(){
     //fast check on correct behavior of class Ensemble
     Ensemble ens1 = Ensemble(10);
     ens1.print("Ensemble 1");
-    Ensemble ens2 = Ensemble::EnsembleGaussian(100,20,2,5,1,5,2); //gaussian generated ensambele
+    Ensemble ens2 = Ensemble::EnsembleGaussian(100,20,2,5,1,5,2); //gaussian generated ensemble
     ens2.print("Ensemble 2");
 
     //Part 1 point 4
@@ -76,41 +76,52 @@ int main(){
     //plot of the invariant mass (True Value)
     hm.GetXaxis()->SetTitle("mass distribution [Kg]");
     hm.GetYaxis()->SetTitle("Occurences");
+    hm.SetLineColor(kBlue);
     hm.Draw(); //plot the histogram
-    hm.SetLineColor(kRed);
-    hm.SaveAs("./mass.pdf");//plot of the invariant mass (True Value)
+    hm.Fit("gaus"); //overlay the fit
+    canv.SaveAs("./mass.pdf");//plot of the invariant mass (True Value)
 
-    hx1.GetXaxis()->SetTitle("x distribution [m/s]");
+    hx1.GetXaxis()->SetTitle("x distribution [m]");
     hx1.GetYaxis()->SetTitle("Occurences");
+    hx1.SetLineColor(kBlue);
     hx1.Draw(); //plot the histogram
-    hx1.SetLineColor(kRed);
-    hx2.SaveAs("./x.pdf");
-    hx2.GetXaxis()->SetTitle("y distribution [m/s]");
+    hx1.Fit("gaus"); //overlay the fit
+    canv.SaveAs("./x.pdf");
+
+    hx2.GetXaxis()->SetTitle("y distribution [m]");
     hx2.GetYaxis()->SetTitle("Occurences");
+    hx2.SetLineColor(kBlue);
     hx2.Draw(); //plot the histogram
-    hx2.SetLineColor(kRed);
-    hx2.SaveAs("./y.pdf");
-    hx3.GetXaxis()->SetTitle("z distribution [m/s]");
+    hx2.Fit("gaus"); //overlay the fit
+    canv.SaveAs("./y.pdf");
+
+    hx3.GetXaxis()->SetTitle("z distribution [m]");
     hx3.GetYaxis()->SetTitle("Occurences");
+    hx3.SetLineColor(kBlue);
     hx3.Draw(); //plot the histogram
-    hx3.SetLineColor(kRed);
-    hx3.SaveAs("./z.pdf");
+    hx3.Fit("gaus"); //overlay the fit
+    canv.SaveAs("./z.pdf");
 
     hv1.GetXaxis()->SetTitle("vx distribution [m/s]");
     hv1.GetYaxis()->SetTitle("Occurences");
+    hv1.SetLineColor(kBlue);
     hv1.Draw(); //plot the histogram
-    hv1.SetLineColor(kRed);
-    hv2.SaveAs("./vx.pdf");
+    hv1.Fit("gaus"); //overlay the fit
+    canv.SaveAs("./vx.pdf");
+
     hv2.GetXaxis()->SetTitle("vy distribution [m/s]");
     hv2.GetYaxis()->SetTitle("Occurences");
+    hv2.SetLineColor(kBlue);
     hv2.Draw(); //plot the histogram
-    hv2.SetLineColor(kRed);
-    hv2.SaveAs("./vy.pdf");
+    hv2.Fit("gaus"); //overlay the fit
+    canv.SaveAs("./vy.pdf");
+    
     hv3.GetXaxis()->SetTitle("vz distribution [m/s]");
     hv3.GetYaxis()->SetTitle("Occurences");
+    hv3.SetLineColor(kBlue);
     hv3.Draw(); //plot the histogram
-    hv3.SetLineColor(kRed);
-    hv3.SaveAs("./vz.pdf");
+    hv3.Fit("gaus"); //overlay the fit
+    canv.SaveAs("./vz.pdf");
 
 
 
@@ -130,7 +141,7 @@ int main(){
     double T = myEns.T();
     double m,x,y,z,vx,vy,vz;
     tree->Branch("N", &N,  "N/I");
-    tree->Branch("T", &T, "T/I");
+    tree->Branch("T", &T, "T/D");
     tree->Branch("m", &m, "m/D");
     tree->Branch("x", &x, "x/D");
     tree->Branch("y", &y, "y/D");

@@ -62,6 +62,11 @@ Ensemble::Ensemble(int N,int distrType, double m_par1, double m_par2, double x_p
     gen_ = TRandom3(); //instance of a TRandom generator
     gen_.SetSeed(0);//setting the seed for the random generator
 
+    /*parameter1 and parameter 2 are:
+      - minimum and maximum if the distribution is uniform
+      - mean and standard deviation if the distribution is gaussian
+    */
+
     if(distrType==UNIFORM){ //if the distribution is uniform
         fillEnsemble_Uniform_(m_par1,m_par2,x_par1,x_par2,v_par1,v_par2); 
     }
