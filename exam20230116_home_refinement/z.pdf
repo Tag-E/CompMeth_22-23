@@ -1,0 +1,67 @@
+{
+//========= Macro generated from object: hx3/Distribution of the z coordinate
+//========= by ROOT version6.26/06
+   
+   TH1F *hx3__4 = new TH1F("hx3__4","Distribution of the z coordinate",100,-1,11);
+   hx3__4->SetBinContent(26,1);
+   hx3__4->SetBinContent(28,1);
+   hx3__4->SetBinContent(29,1);
+   hx3__4->SetBinContent(30,1);
+   hx3__4->SetBinContent(31,2);
+   hx3__4->SetBinContent(32,2);
+   hx3__4->SetBinContent(33,2);
+   hx3__4->SetBinContent(34,6);
+   hx3__4->SetBinContent(35,9);
+   hx3__4->SetBinContent(36,8);
+   hx3__4->SetBinContent(37,9);
+   hx3__4->SetBinContent(38,15);
+   hx3__4->SetBinContent(39,16);
+   hx3__4->SetBinContent(40,20);
+   hx3__4->SetBinContent(41,26);
+   hx3__4->SetBinContent(42,25);
+   hx3__4->SetBinContent(43,23);
+   hx3__4->SetBinContent(44,34);
+   hx3__4->SetBinContent(45,44);
+   hx3__4->SetBinContent(46,43);
+   hx3__4->SetBinContent(47,38);
+   hx3__4->SetBinContent(48,53);
+   hx3__4->SetBinContent(49,62);
+   hx3__4->SetBinContent(50,44);
+   hx3__4->SetBinContent(51,51);
+   hx3__4->SetBinContent(52,51);
+   hx3__4->SetBinContent(53,46);
+   hx3__4->SetBinContent(54,50);
+   hx3__4->SetBinContent(55,49);
+   hx3__4->SetBinContent(56,46);
+   hx3__4->SetBinContent(57,32);
+   hx3__4->SetBinContent(58,36);
+   hx3__4->SetBinContent(59,29);
+   hx3__4->SetBinContent(60,27);
+   hx3__4->SetBinContent(61,13);
+   hx3__4->SetBinContent(62,15);
+   hx3__4->SetBinContent(63,12);
+   hx3__4->SetBinContent(64,13);
+   hx3__4->SetBinContent(65,11);
+   hx3__4->SetBinContent(66,11);
+   hx3__4->SetBinContent(67,6);
+   hx3__4->SetBinContent(68,6);
+   hx3__4->SetBinContent(69,3);
+   hx3__4->SetBinContent(70,5);
+   hx3__4->SetBinContent(71,2);
+   hx3__4->SetBinContent(73,1);
+   hx3__4->SetEntries(1000);
+
+   ci = TColor::GetColor("#ff0000");
+   hx3__4->SetLineColor(ci);
+   hx3__4->GetXaxis()->SetTitle("z distribution [m/s]");
+   hx3__4->GetXaxis()->SetLabelFont(42);
+   hx3__4->GetXaxis()->SetTitleOffset(1);
+   hx3__4->GetXaxis()->SetTitleFont(42);
+   hx3__4->GetYaxis()->SetTitle("Occurences");
+   hx3__4->GetYaxis()->SetLabelFont(42);
+   hx3__4->GetYaxis()->SetTitleFont(42);
+   hx3__4->GetZaxis()->SetLabelFont(42);
+   hx3__4->GetZaxis()->SetTitleOffset(1);
+   hx3__4->GetZaxis()->SetTitleFont(42);
+   hx3__4->Draw("");
+}

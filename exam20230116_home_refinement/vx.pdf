@@ -1,0 +1,69 @@
+{
+//========= Macro generated from object: hv2/Distribution of the vy coordinate
+//========= by ROOT version6.26/06
+   
+   TH1F *hv2__5 = new TH1F("hv2__5","Distribution of the vy coordinate",100,-7,17);
+   hv2__5->SetBinContent(26,1);
+   hv2__5->SetBinContent(27,2);
+   hv2__5->SetBinContent(28,1);
+   hv2__5->SetBinContent(29,1);
+   hv2__5->SetBinContent(30,2);
+   hv2__5->SetBinContent(31,5);
+   hv2__5->SetBinContent(32,5);
+   hv2__5->SetBinContent(33,4);
+   hv2__5->SetBinContent(34,5);
+   hv2__5->SetBinContent(35,10);
+   hv2__5->SetBinContent(36,11);
+   hv2__5->SetBinContent(37,12);
+   hv2__5->SetBinContent(38,11);
+   hv2__5->SetBinContent(39,23);
+   hv2__5->SetBinContent(40,22);
+   hv2__5->SetBinContent(41,24);
+   hv2__5->SetBinContent(42,30);
+   hv2__5->SetBinContent(43,31);
+   hv2__5->SetBinContent(44,39);
+   hv2__5->SetBinContent(45,44);
+   hv2__5->SetBinContent(46,43);
+   hv2__5->SetBinContent(47,36);
+   hv2__5->SetBinContent(48,35);
+   hv2__5->SetBinContent(49,56);
+   hv2__5->SetBinContent(50,36);
+   hv2__5->SetBinContent(51,55);
+   hv2__5->SetBinContent(52,47);
+   hv2__5->SetBinContent(53,45);
+   hv2__5->SetBinContent(54,35);
+   hv2__5->SetBinContent(55,51);
+   hv2__5->SetBinContent(56,36);
+   hv2__5->SetBinContent(57,38);
+   hv2__5->SetBinContent(58,41);
+   hv2__5->SetBinContent(59,19);
+   hv2__5->SetBinContent(60,28);
+   hv2__5->SetBinContent(61,19);
+   hv2__5->SetBinContent(62,27);
+   hv2__5->SetBinContent(63,11);
+   hv2__5->SetBinContent(64,14);
+   hv2__5->SetBinContent(65,10);
+   hv2__5->SetBinContent(66,8);
+   hv2__5->SetBinContent(67,3);
+   hv2__5->SetBinContent(68,8);
+   hv2__5->SetBinContent(69,5);
+   hv2__5->SetBinContent(70,1);
+   hv2__5->SetBinContent(71,1);
+   hv2__5->SetBinContent(72,2);
+   hv2__5->SetBinContent(73,5);
+   hv2__5->SetBinContent(74,1);
+   hv2__5->SetBinContent(75,1);
+   hv2__5->SetEntries(1000);
+
+   ci = TColor::GetColor("#000099");
+   hv2__5->SetLineColor(ci);
+   hv2__5->GetXaxis()->SetLabelFont(42);
+   hv2__5->GetXaxis()->SetTitleOffset(1);
+   hv2__5->GetXaxis()->SetTitleFont(42);
+   hv2__5->GetYaxis()->SetLabelFont(42);
+   hv2__5->GetYaxis()->SetTitleFont(42);
+   hv2__5->GetZaxis()->SetLabelFont(42);
+   hv2__5->GetZaxis()->SetTitleOffset(1);
+   hv2__5->GetZaxis()->SetTitleFont(42);
+   hv2__5->Draw("");
+}

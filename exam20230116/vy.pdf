@@ -1,0 +1,71 @@
+{
+//========= Macro generated from object: hv2/Distribution of the vy coordinate
+//========= by ROOT version6.26/06
+   
+   TH1F *hv2__6 = new TH1F("hv2__6","Distribution of the vy coordinate",100,-7,17);
+   hv2__6->SetBinContent(26,1);
+   hv2__6->SetBinContent(27,2);
+   hv2__6->SetBinContent(28,1);
+   hv2__6->SetBinContent(29,1);
+   hv2__6->SetBinContent(30,2);
+   hv2__6->SetBinContent(31,5);
+   hv2__6->SetBinContent(32,5);
+   hv2__6->SetBinContent(33,4);
+   hv2__6->SetBinContent(34,5);
+   hv2__6->SetBinContent(35,10);
+   hv2__6->SetBinContent(36,11);
+   hv2__6->SetBinContent(37,12);
+   hv2__6->SetBinContent(38,11);
+   hv2__6->SetBinContent(39,23);
+   hv2__6->SetBinContent(40,22);
+   hv2__6->SetBinContent(41,24);
+   hv2__6->SetBinContent(42,30);
+   hv2__6->SetBinContent(43,31);
+   hv2__6->SetBinContent(44,39);
+   hv2__6->SetBinContent(45,44);
+   hv2__6->SetBinContent(46,43);
+   hv2__6->SetBinContent(47,36);
+   hv2__6->SetBinContent(48,35);
+   hv2__6->SetBinContent(49,56);
+   hv2__6->SetBinContent(50,36);
+   hv2__6->SetBinContent(51,55);
+   hv2__6->SetBinContent(52,47);
+   hv2__6->SetBinContent(53,45);
+   hv2__6->SetBinContent(54,35);
+   hv2__6->SetBinContent(55,51);
+   hv2__6->SetBinContent(56,36);
+   hv2__6->SetBinContent(57,38);
+   hv2__6->SetBinContent(58,41);
+   hv2__6->SetBinContent(59,19);
+   hv2__6->SetBinContent(60,28);
+   hv2__6->SetBinContent(61,19);
+   hv2__6->SetBinContent(62,27);
+   hv2__6->SetBinContent(63,11);
+   hv2__6->SetBinContent(64,14);
+   hv2__6->SetBinContent(65,10);
+   hv2__6->SetBinContent(66,8);
+   hv2__6->SetBinContent(67,3);
+   hv2__6->SetBinContent(68,8);
+   hv2__6->SetBinContent(69,5);
+   hv2__6->SetBinContent(70,1);
+   hv2__6->SetBinContent(71,1);
+   hv2__6->SetBinContent(72,2);
+   hv2__6->SetBinContent(73,5);
+   hv2__6->SetBinContent(74,1);
+   hv2__6->SetBinContent(75,1);
+   hv2__6->SetEntries(1000);
+
+   ci = TColor::GetColor("#ff0000");
+   hv2__6->SetLineColor(ci);
+   hv2__6->GetXaxis()->SetTitle("vy distribution [m/s]");
+   hv2__6->GetXaxis()->SetLabelFont(42);
+   hv2__6->GetXaxis()->SetTitleOffset(1);
+   hv2__6->GetXaxis()->SetTitleFont(42);
+   hv2__6->GetYaxis()->SetTitle("Occurences");
+   hv2__6->GetYaxis()->SetLabelFont(42);
+   hv2__6->GetYaxis()->SetTitleFont(42);
+   hv2__6->GetZaxis()->SetLabelFont(42);
+   hv2__6->GetZaxis()->SetTitleOffset(1);
+   hv2__6->GetZaxis()->SetTitleFont(42);
+   hv2__6->Draw("");
+}

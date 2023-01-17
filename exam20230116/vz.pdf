@@ -1,0 +1,69 @@
+{
+//========= Macro generated from object: hv3/Distribution of the vz coordinate
+//========= by ROOT version6.26/06
+   
+   TH1F *hv3__7 = new TH1F("hv3__7","Distribution of the vz coordinate",100,-7,17);
+   hv3__7->SetBinContent(26,2);
+   hv3__7->SetBinContent(27,1);
+   hv3__7->SetBinContent(29,1);
+   hv3__7->SetBinContent(30,1);
+   hv3__7->SetBinContent(31,3);
+   hv3__7->SetBinContent(32,3);
+   hv3__7->SetBinContent(33,6);
+   hv3__7->SetBinContent(34,10);
+   hv3__7->SetBinContent(35,13);
+   hv3__7->SetBinContent(36,6);
+   hv3__7->SetBinContent(37,12);
+   hv3__7->SetBinContent(38,14);
+   hv3__7->SetBinContent(39,25);
+   hv3__7->SetBinContent(40,25);
+   hv3__7->SetBinContent(41,25);
+   hv3__7->SetBinContent(42,22);
+   hv3__7->SetBinContent(43,30);
+   hv3__7->SetBinContent(44,36);
+   hv3__7->SetBinContent(45,43);
+   hv3__7->SetBinContent(46,33);
+   hv3__7->SetBinContent(47,40);
+   hv3__7->SetBinContent(48,43);
+   hv3__7->SetBinContent(49,48);
+   hv3__7->SetBinContent(50,45);
+   hv3__7->SetBinContent(51,49);
+   hv3__7->SetBinContent(52,52);
+   hv3__7->SetBinContent(53,46);
+   hv3__7->SetBinContent(54,47);
+   hv3__7->SetBinContent(55,44);
+   hv3__7->SetBinContent(56,41);
+   hv3__7->SetBinContent(57,33);
+   hv3__7->SetBinContent(58,32);
+   hv3__7->SetBinContent(59,17);
+   hv3__7->SetBinContent(60,31);
+   hv3__7->SetBinContent(61,29);
+   hv3__7->SetBinContent(62,16);
+   hv3__7->SetBinContent(63,14);
+   hv3__7->SetBinContent(64,14);
+   hv3__7->SetBinContent(65,15);
+   hv3__7->SetBinContent(66,9);
+   hv3__7->SetBinContent(67,4);
+   hv3__7->SetBinContent(68,6);
+   hv3__7->SetBinContent(69,2);
+   hv3__7->SetBinContent(70,3);
+   hv3__7->SetBinContent(71,2);
+   hv3__7->SetBinContent(72,2);
+   hv3__7->SetBinContent(74,3);
+   hv3__7->SetBinContent(78,2);
+   hv3__7->SetEntries(1000);
+
+   ci = TColor::GetColor("#ff0000");
+   hv3__7->SetLineColor(ci);
+   hv3__7->GetXaxis()->SetTitle("vz distribution [m/s]");
+   hv3__7->GetXaxis()->SetLabelFont(42);
+   hv3__7->GetXaxis()->SetTitleOffset(1);
+   hv3__7->GetXaxis()->SetTitleFont(42);
+   hv3__7->GetYaxis()->SetTitle("Occurences");
+   hv3__7->GetYaxis()->SetLabelFont(42);
+   hv3__7->GetYaxis()->SetTitleFont(42);
+   hv3__7->GetZaxis()->SetLabelFont(42);
+   hv3__7->GetZaxis()->SetTitleOffset(1);
+   hv3__7->GetZaxis()->SetTitleFont(42);
+   hv3__7->Draw("");
+}

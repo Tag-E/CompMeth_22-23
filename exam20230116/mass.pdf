@@ -1,0 +1,71 @@
+{
+//========= Macro generated from object: hm/Distribution of the mass
+//========= by ROOT version6.26/06
+   
+   TH1F *hm__1 = new TH1F("hm__1","Distribution of the mass",100,8,32);
+   hm__1->SetBinContent(28,1);
+   hm__1->SetBinContent(29,1);
+   hm__1->SetBinContent(30,2);
+   hm__1->SetBinContent(31,5);
+   hm__1->SetBinContent(32,2);
+   hm__1->SetBinContent(33,4);
+   hm__1->SetBinContent(34,8);
+   hm__1->SetBinContent(35,10);
+   hm__1->SetBinContent(36,13);
+   hm__1->SetBinContent(37,10);
+   hm__1->SetBinContent(38,18);
+   hm__1->SetBinContent(39,14);
+   hm__1->SetBinContent(40,31);
+   hm__1->SetBinContent(41,27);
+   hm__1->SetBinContent(42,29);
+   hm__1->SetBinContent(43,31);
+   hm__1->SetBinContent(44,29);
+   hm__1->SetBinContent(45,41);
+   hm__1->SetBinContent(46,34);
+   hm__1->SetBinContent(47,54);
+   hm__1->SetBinContent(48,47);
+   hm__1->SetBinContent(49,43);
+   hm__1->SetBinContent(50,44);
+   hm__1->SetBinContent(51,46);
+   hm__1->SetBinContent(52,54);
+   hm__1->SetBinContent(53,31);
+   hm__1->SetBinContent(54,38);
+   hm__1->SetBinContent(55,46);
+   hm__1->SetBinContent(56,48);
+   hm__1->SetBinContent(57,37);
+   hm__1->SetBinContent(58,36);
+   hm__1->SetBinContent(59,19);
+   hm__1->SetBinContent(60,31);
+   hm__1->SetBinContent(61,22);
+   hm__1->SetBinContent(62,20);
+   hm__1->SetBinContent(63,13);
+   hm__1->SetBinContent(64,14);
+   hm__1->SetBinContent(65,9);
+   hm__1->SetBinContent(66,11);
+   hm__1->SetBinContent(67,11);
+   hm__1->SetBinContent(68,3);
+   hm__1->SetBinContent(69,2);
+   hm__1->SetBinContent(70,4);
+   hm__1->SetBinContent(71,1);
+   hm__1->SetBinContent(73,2);
+   hm__1->SetBinContent(74,2);
+   hm__1->SetBinContent(75,1);
+   hm__1->SetBinContent(78,1);
+   hm__1->SetEntries(1000);
+
+   Int_t ci;      // for color index setting
+   TColor *color; // for color definition with alpha
+   ci = TColor::GetColor("#ff0000");
+   hm__1->SetLineColor(ci);
+   hm__1->GetXaxis()->SetTitle("mass distribution [Kg]");
+   hm__1->GetXaxis()->SetLabelFont(42);
+   hm__1->GetXaxis()->SetTitleOffset(1);
+   hm__1->GetXaxis()->SetTitleFont(42);
+   hm__1->GetYaxis()->SetTitle("Occurences");
+   hm__1->GetYaxis()->SetLabelFont(42);
+   hm__1->GetYaxis()->SetTitleFont(42);
+   hm__1->GetZaxis()->SetLabelFont(42);
+   hm__1->GetZaxis()->SetTitleOffset(1);
+   hm__1->GetZaxis()->SetTitleFont(42);
+   hm__1->Draw("");
+}
